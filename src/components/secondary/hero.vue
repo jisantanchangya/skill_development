@@ -16,7 +16,7 @@ const searchQuery = ref('')
 
         <div class="relative z-10 flex flex-col items-center gap-8 text-center px-4">
             <h1 class="text-white text-4xl sm:text-5xl font-bold tracking-tight drop-shadow-md">
-                Welcome to Skill Development Project
+                Skill Development Project
             </h1>
             <div class="flex justify-center items-center gap-2 border border-white/40 rounded-lg p-2 bg-black/20 backdrop-blur-xs">
                 <!-- lucide search icon -->
@@ -25,7 +25,7 @@ const searchQuery = ref('')
                     v-model="searchQuery" 
                     type="text" 
                     placeholder="Search a course..." 
-                    class="p-2 text-white placeholder-gray-300 bg-transparent outline-none w-64 sm:w-80" 
+                    class="p-2 text-white placeholder-gray-300 bg-transparent outline-none w-64 sm:w-90" 
                 />
             </div>
         </div>
