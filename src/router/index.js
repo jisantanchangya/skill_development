@@ -1,27 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import skillView from '../views/skillView.vue'
-import categoryView from '../views/categoryView.vue'
-import contactView from '../views/contactView.vue'
+import PublicView from '@/layouts/publicLayout.vue'
+import LoginView from '@/modules/auth/views/loginview.vue'
+import RegisterView from '@/modules/auth/views/registerView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'skillView',
-      component: skillView,
-    }, 
-    {
-      path: '/category',
-      name: 'categoryView',
-      component: categoryView,
+      name: 'public',
+      component: PublicView
     },
     {
-      path: '/contact',
-      name: 'contactView',
-      component: contactView,
+      path: '/login',
+      name: 'login',
+      component: LoginView
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: RegisterView
     }
+
   ],
 })
 
